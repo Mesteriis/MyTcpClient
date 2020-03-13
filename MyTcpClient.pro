@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,10 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    guicore.cpp
+    guicore.cpp \
+    qcustomplot.cpp \
+    swcore.cpp
 
 HEADERS += \
-    guicore.hpp
+    guicore.hpp \
+    qcustomplot.hpp \
+    swcore.hpp
 
 FORMS += \
     guicore.ui

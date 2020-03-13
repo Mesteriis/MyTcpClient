@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "swcore.hpp"
+#include "qcustomplot.hpp"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class guicore; }
 QT_END_NAMESPACE
@@ -15,7 +18,14 @@ public:
     guicore(QWidget *parent = nullptr);
     ~guicore();
 
+    QString timeStamp();
+
+public slots:
+    void slotAddMsgToStatusBar (QString msg);
+
 private:
     Ui::guicore *ui;
+    swcore *swc;
+    QThread *sysThread;
 };
 #endif // GUICORE_HPP
