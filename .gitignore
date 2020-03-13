@@ -71,3 +71,5 @@ Thumbs.db
 *.dll
 *.exe
 
+build/MyTcpClient/.qmake.stash
+build/MyTcpClient/moc_predefs.h
