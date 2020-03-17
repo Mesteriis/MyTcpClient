@@ -33,3 +33,16 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc
+
+
+macx:ICON = $${PWD}/client.icns
+
+VERSION = 1.0.0
+
+QMAKE_TARGET_COMPANY = "Shade Inc"
+QMAKE_TARGET_PRODUCT = MyTcpClient
+QMAKE_TARGET_DESCRIPTION = Simpli Tcp Client graf
+QMAKE_TARGET_COPYRIGHT = AVM
