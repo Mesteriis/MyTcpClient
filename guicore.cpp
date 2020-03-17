@@ -76,7 +76,6 @@ guicore::guicore(QWidget *parent)
 }
 
 guicore::~guicore(){
-//    sysThread->quit();
     sysThread->terminate();
     if (swc!=NULL) swc->deleteLater();
     if (sysThread!=NULL) sysThread->deleteLater();
